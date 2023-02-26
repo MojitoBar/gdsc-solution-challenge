@@ -1,0 +1,13 @@
+{
+  "name": "My Google Maps New Tab Extension",
+  "description": "Show Google Maps when a new tab is opened.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
